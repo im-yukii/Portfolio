@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>about</title>
+  <!--reset-->
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
+  <!--自作のCSS-->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <!--    JS本体-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!--GSAP横スクロールJS-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <!--gsap_controlJS-->
+  <script src="js/gsap_control.js" defer></script>
+  <!--gsap_about-->
+  <script src="js/gsap_about.js"></script>
+  <!--main.JS-->
+  <script src="js/main.js" defer></script>
+  <!--font-->
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'aag8tcx',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+</head>
+
+<body id="about">
+  <!--SP版gnav-->
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__container">
+        <div class="header__logo"> <a href="index.html"> <img src="img/logo.png" alt="Logo"> </a> </div>
+        <button id="js-humberger" type="button" class="humberger" aria-controls="navigation" aria-expanded="false">
+          <span class="humberger__text"></span> </button>
+        <!-- PC版gnav-->
+        <nav class="header__nav_pc">
+          <ul class="nav_pc_list">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="index.html#works_page">WORKS</a></li>
+            <li><a href="index.html#skill_page">SKILL</a></li>
+            <li><a href="index.html#contact_page">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!--SP版gnav続き-->
+  <div class="header__nav-area js-nav-area" id="navigation">
+    <nav id="js-global-navigation" class="global-navigation">
+      <ul class="global-navigation__list">
+        <li><a href="index.html" class="global-navigation__link">HOME</a></li>
+        <li><a href="about.html" class="global-navigation__link">ABOUT</a></li>
+        <li><a href="index.html#works_page" class="global-navigation__link">WORKS</a></li>
+        <li><a href="index.html#skill_page" class="global-navigation__link">SKILL</a></li>
+        <li><a href="index.html#contact_page" class="global-navigation__link">CONTACT</a></li>
+      </ul>
+      <div class="icons"><a href="https://www.instagram.com/daily_yun0331" target="_blank" rel="norepener"><img
+            src="img/instagram _icon@2x.png" alt="インスタグラムアイコン"></a><a href="https://twitter.com/YUUKI_design"
+          target="_blank" rel="norepener"><img src="img/x_iconW@2x.png" alt="Xアイコン"></a><a
+          href="https://www.pinterest.jp/yuukiimnida/" target="_blank" rel="norepener"><img src="img/pinta_iconW@2x.png"
+            alt="ピンタレスト"></a></div>
+    </nav>
+  </div>
+  <!-- ここからメイン-->
+  <main>
+    <div class="aboutP_container">
+      <div class="aboutP_mv">
+        <div class="aboutP__myImg fadeInTrigger"><img src="img/aboutimg.png" alt="phot"></div>
+        <div class="aboutP_heading">
+          <p class="tategaki about_top_sub">私について</p>
+          <h2 class="tategaki about_heading_about">ABOUT</h2>
+        </div>
+      </div>
+      <p class="aboutP_name">村井 友希 - Yuki Murai</p>
+      <p class="aboutP_introduction">
+        高等学校卒業後、事務・接客・ネイリストと経験を積むことで自分の好きなことを仕事にしたいと思い転職を決意。2023年4月よりWebデザインの勉強を始め、広告代理店にてWebデザイナーとして2年3ヶ月の実務に従事しました。趣味はアニメを観ること、漫画を読むこと、ゲームをすること、食べることです。クリエイティブなことが大好きで、たくさんの制作物を作っていきたいです。
+      </p>
+      <div class="icons"><a href="https://www.instagram.com/daily_yun0331" target="_blank" rel="norepener"><img
+            src="img/instagram _icon@2x.png" alt="インスタグラムアイコン"></a><a href="https://twitter.com/YUUKI_design"
+          target="_blank" rel="norepener"><img src="img/x_iconW@2x.png" alt="Xアイコン"></a><a
+          href="https://www.pinterest.jp/yuukiimnida/" target="_blank" rel="norepener"><img src="img/pinta_iconW@2x.png"
+            alt="ピンタレスト"></a></div>
+    </div>
+    <!--  ここから横スクロール域-->
+    <section class="scroll section">
+      <div class="scroll_contents_inner">
+        <h2 class="about_heading_now textanimation">UNTIL NOW</h2>
+        <p class="subFont sub_now">現在に至るまで</p>
+        <div class="scroll_container">
+          <ol class="scroll_wrap">
+            <li class="scroll_box">
+              <time>1998.03</time>
+              <p class="title js-fadeUp">イラストやアニメが好きな幼少期</p>
+              <span class="now__dot"></span>
+              <p class="js-fadeUp">幼少期からアニメが大好きで、ジャンルを問わず毎日アニメを見てました。絵を描くことも好きで特に似顔絵やアニメのキャラクターを描くことが好きでした。</p>
+            </li>
+            <li class="scroll_box">
+              <time>2016.04</time>
+              <p class="title js-fadeUp">一般事務職へ就職</p>
+              <span class="now__dot"></span>
+              <p class="js-fadeUp">高等学校を卒業しPC作業が好きだったことから一般事務職へ就職し正確さ・スピードを意識し、円滑に業務を行えるよう心掛けました。</p>
+            </li>
+            <li class="scroll_box">
+              <time>2018.10</time>
+              <p class="title js-fadeUp">接客業へ転職</p>
+              <span class="now__dot"></span>
+              <p class="js-fadeUp">カフェでの接客業へ転職。日々お客さまと接する中でコミュニケーション力を磨くことができました。ドリンクやフードを”作る”ことが楽しくやりがいを感じていました。</p>
+            </li>
+            <li class="scroll_box">
+              <time>2021.04</time>
+              <p class="title">美容サービス業へ転職</p>
+              <span class="now__dot"></span>
+              <p>コロナ禍をきっかけに手に職をつけたいと思い半年間スクールでネイルを学び、ネイリストへ転職。施術を進めながら短い時間でのタスク管理とヒアリング力を培うことができました。</p>
+            </li>
+            <li class="scroll_box">
+              <time>2022.04</time>
+              <p class="title">一般事務へ転職</p>
+              <span class="now__dot"></span>
+              <p>ネイリストのお仕事を通して”デザイン”をすることが好きで仕事にしたと思い始めWebデザインを知り、目指すためPCに使い慣れていたいと思いもう一度一般事務として派遣。</p>
+            </li>
+            <li class="scroll_box">
+              <time>2023.04</time>
+              <p class="title">職業訓練校へ入校</p>
+              <span class="now__dot"></span>
+              <p>契約期間の満了を機にWebデザイナーを目指すことを決意。Web職業訓練校(中央キャリアアップアカデミー)へ入学し、本格的にWebデザインの勉強を始める。</p>
+            </li>
+            <li class="scroll_box">
+              <time>2023.11</time>
+              <p class="title">Webデザイナーとして広告代理店に入社</p>
+              <span class="now__dot"></span>
+              <p>卒業後、Webデザイナーとして広告代理店に入社。主に動画編集やバナー制作に携わる。クリエイティブの力でビジネス課題を解決すべく、常にコンバージョンを意識した戦略的な視点を持ったデザイン体現を心がけています。
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+    <!--  横スクロール終了-->
+    <section class="myStrengths_inner">
+      <h2 class="myStrengths textanimation">STRENGTHS</h2>
+      <p class="subFont">わたしの強み</p>
+      <ol>
+        <li>
+          <h3>Curious</h3>
+          <p class="subFont">(好奇心旺盛)</p>
+          <p class="fadeInTrigger">
+            幼い頃から流行りやトレンドに敏感で、常に興味を持っていました。流行りの移り変わりが激しいWeb業界においても、トレンドのデザインや新しいことはどんどんインプットし挑戦することで、アウトプットできるよう努めます。
+          </p>
+        </li>
+        <li>
+          <h3>Action</h3>
+          <p class="subFont">(行動力)</p>
+          <p class="fadeInTrigger">
+            現状を把握し何をするべきか考え、現実的に行動することを心がけております。ネイル業の経験をきっかけに、目的を達成するためへの課題発見力・行動力を培うことができました。Webデザインのお仕事も同様に常に新しい課題を持つことで自身のアップデートをし続け、貪欲に取り組むよう努めてまいります。
+          </p>
+        </li>
+        <li>
+          <h3>Communication</h3>
+          <p class="subFont">(コミュニケーション)</p>
+          <p class="fadeInTrigger">
+            コミュニケーションの場では、1対１や集団問わず良好な関係を築くよう心がけております。前職ではお客さまと接する中で求めている事を第一に考え、行動・提案をする事で結果に繋がりました。この経験で培った強みを、クライアントさまや職場のメンバーとの円滑なコミュニケーションに貢献します。
+          </p>
+        </li>
+      </ol>
+    </section>
+    <section class="about_vision">
+      <h2 class="vision textanimation">VISION</h2>
+      <p class="subFont">ビジョン</p>
+      <p class="about_vision_content">ネイル業界で培ったトレンドをキャッチアップする力、お客さまへのヒアリング力を活かし、Webを通しお客さまとユーザーを繋ぐ橋渡しをしたいです。
+        メンテナンス性を意識しながらも、見る人の心を動かしワクワクするデザインを作っていきたいです。
+        新しい技術を取り入れることを忘れずに日々精進していく所存です。</p>
+    </section>
+  </main>
+  <footer class="comon_footer">
+    <small>&copy;2023Yuki Miyauchi</small>
+    <div class="icons"><a href="https://www.instagram.com/daily_yun0331" target="_blank" rel="norepener"><img
+          src="img/instagram _icon@2x.png" alt="インスタグラムアイコン"></a><a href="https://twitter.com/YUUKI_design"
+        target="_blank" rel="norepener"><img src="img/x_iconW@2x.png" alt="Xアイコン"></a><a
+        href="https://www.pinterest.jp/yuukiimnida/" target="_blank" rel="norepener"><img src="img/pinta_iconW@2x.png"
+          alt="ピンタレスト"></a></div>
+    <a class="comon_pagetop" href="#">page top</a>
+  </footer>
+</body>
+
+</html>

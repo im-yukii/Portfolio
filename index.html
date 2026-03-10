@@ -1,0 +1,321 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Yuki Miyauchi Portfolio</title>
+  <!--reset-->
+  <link rel="stylesheet" href="https://unpkg.com/modern-css-reset/dist/reset.min.css">
+  <!--自作のCSS-->
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!--    JS本体-->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!--gsap-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <!--split-text-->
+  <script src="https://unpkg.com/split-type"></script>
+  <script src="js/gsap_control.js" defer></script>
+  <!--main.JS-->
+  <script src="js/main.js" defer></script>
+  <!--font-->
+  <script>
+    (function (d) {
+      var config = {
+        kitId: 'aag8tcx',
+        scriptTimeout: 3000,
+        async: true
+      },
+        h = d.documentElement, t = setTimeout(function () { h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive"; }, config.scriptTimeout), tk = d.createElement("script"), f = false, s = d.getElementsByTagName("script")[0], a; h.className += " wf-loading"; tk.src = 'https://use.typekit.net/' + config.kitId + '.js'; tk.async = true; tk.onload = tk.onreadystatechange = function () { a = this.readyState; if (f || a && a != "complete" && a != "loaded") return; f = true; clearTimeout(t); try { Typekit.load(config) } catch (e) { } }; s.parentNode.insertBefore(tk, s)
+    })(document);
+  </script>
+</head>
+
+<body id="top">
+  <!------------------------------------ヘッダー開始---------------------------------------->
+  <!--SP版gnav-->
+  <header class="header">
+    <div class="header__inner">
+      <div class="header__container">
+        <div class="header__logo"> <a href="index.html"> <img src="img/logo.png" alt="Logo"> </a> </div>
+        <button id="js-humberger" type="button" class="humberger" aria-controls="navigation" aria-expanded="false">
+          <span class="humberger__text"></span> </button>
+        <!-- PC版gnav-->
+        <nav class="header__nav_pc">
+          <ul class="nav_pc_list">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="index.html#works_page">WORKS</a></li>
+            <li><a href="index.html#skill_page">SKILL</a></li>
+            <li><a href="index.html#contact_page">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <!------------------------------------ヘッダー終了---------------------------------------->
+  <!--SP版gnav続き-->
+  <div class="header__nav-area js-nav-area" id="navigation">
+    <nav id="js-global-navigation" class="global-navigation">
+      <ul class="global-navigation__list">
+        <li><a href="index.html" class="global-navigation__link">HOME</a></li>
+        <li><a href="about.html" class="global-navigation__link">ABOUT</a></li>
+        <li><a href="#works_page" class="global-navigation__link">WORKS</a></li>
+        <li><a href="#skill_page" class="global-navigation__link">SKILL</a></li>
+        <li><a href="#contact_page" class="global-navigation__link">CONTACT</a></li>
+      </ul>
+      <div class="icons"><a href="https://www.instagram.com/daily_yun0331" target="_blank" rel="norepener"><img
+            src="img/instagram _icon@2x.png" alt="インスタグラムアイコン"></a><a href="https://twitter.com/YUUKI_design"
+          target="_blank" rel="norepener"><img src="img/x_iconW@2x.png" alt="Xアイコン"></a><a
+          href="https://www.pinterest.jp/yuukiimnida/" target="_blank" rel="norepener"><img src="img/pinta_iconW@2x.png"
+            alt="ピンタレスト"></a></div>
+    </nav>
+  </div>
+  <!-- ここからメイン-->
+  <main>
+    <div class="mainVisual">
+      <div class="mainVisual__copy">
+        <p class="topMessage split_text">Welcome to</p>
+        <div><img class="yukiMiyauchi" src="img/mv@2x.png" alt="MV"></div>
+        <p class="underMessage split_text">Portfolio</p>
+        <p class="typing">2023<span>This is Yuki Murai's Portfolio Website.</span> <span>I'm a fledgling web
+            designer.</span></p>
+      </div>
+      <img class="scrolldown" src="img/scrolldown.png" alt="scrolldown">
+    </div>
+    <section class="pc_topAbout_section">
+      <h2 class="heading textanimation">ABOUT</h2>
+      <p class="subFont">私について</p>
+      <div class="pc_topAbout_flex">
+        <div class="about__image fadeInTrigger"><img src="img/topAboutImg.png" alt="宮内友希"></div>
+        <div class="about_container">
+          <p class="about_name">村井　友希 -Yuki Murai</p>
+          <p class="about_writings">
+            1998年3月31日千葉県出身。高等学校を卒業後、事務・接客・ネイリストを経て、Webデザインに興味を持ち、2023年4月、Web職業訓練校にて基礎を習得後、広告代理店にてWebデザイナーとして2年3ヶ月勤務。
+          </p>
+          <div class="icons"><a href="https://www.instagram.com/daily_yun0331" target="_blank" rel="norepener"><img
+                src="img/instagram _icon@2x.png" alt="インスタグラムアイコン"></a><a href="https://twitter.com/YUUKI_design"
+              target="_blank" rel="norepener"><img src="img/x_iconW@2x.png" alt="Xアイコン"></a><a
+              href="https://www.pinterest.jp/yuukiimnida/" target="_blank" rel="norepener"><img
+                src="img/pinta_iconW@2x.png" alt="ピンタレスト"></a></div>
+          <div class="View_profile_btn"><a href="about.html"><span class="viewprofile">View Profile</span><span
+                class="jp_subFont">(プロフィールを詳しく)</span></a></div>
+        </div>
+      </div>
+    </section>
+    <img src="img/nami.png" alt="namiimg">
+    <section id="works_page" class="section_works">
+      <div class="pc_topWorks_flex">
+        <div>
+          <h2 class="heading textanimation">WORKS</h2>
+          <p class="subFont">制作実績</p>
+        </div>
+        <nav class="works__nav">
+          <ul>
+            <li class="tab_menu is-active" data-group="client">ClientWorks</li>
+            <li class="tab_menu" data-group="design">WebDesign</li>
+            <li class="tab_menu" data-group="banner">Banner</li>
+            <li class="tab_menu" data-group="other">Other</li>
+          </ul>
+        </nav>
+      </div>
+      <div>
+        <ul class="works_items js-fadeUp">
+          <!-- <ここからhtml未作成> -->
+          <li class="tab_content" data-group="client"><a href="Movie_01.html">
+              <div class="works_items_img"><img src="img/topWsaiD01.png" alt="債務整理広告動画"></div>
+              <h3>Movie <span class="works_item_heading">債務整理</span></h3>
+            </a></li>
+          <li class="tab_content" data-group="client"><a href="Movie_02.html">
+              <div class="works_items_img"><img src="img/topWsaiD02.png" alt="債務整理広告動画"></div>
+              <h3>Movie <span class="works_item_heading">債務整理</span></h3>
+            </a></li>
+          <li class="tab_content" data-group="client">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="lauB.html">
+                    <div class="works_items_img"><img src="img/topWlauB01.png" alt="バナー広告"></div>
+                  </a></div>
+                <div class="swiper-slide"><a href="lauB.html">
+                    <div class="works_items_img"><img src="img/topWlauB02.png" alt="バナー広告"></div>
+                  </a></div>
+                <div class="swiper-slide"><a href="lauB.html">
+                    <div class="works_items_img"><img src="img/topWlauB03.png" alt="バナー広告"></div>
+                  </a></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <a href="lauB.html">
+              <h3>Banner <span class="works_item_heading">Laugh.</span></h3>
+            </a>
+          </li>
+          <li class="tab_content" data-group="client">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="UnB.html">
+                    <div class="works_items_img"><img src="img/topWunB01.png" alt="バナー広告"></div>
+                  </a></div>
+                <div class="swiper-slide"><a href="UnB.html">
+                    <div class="works_items_img"><img src="img/topWunB02.png" alt="バナー広告"></div>
+                  </a></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <a href="UnB.html">
+              <h3>Banner <span class="works_item_heading">Un</span></h3>
+            </a>
+          </li>
+          <li class="tab_content" data-group="client"><a href="BEU_B.html">
+              <div class="works_items_img"><img src="img/topWbeaB.png" alt="バナー広告"></div>
+              <h3>Banner <span class="works_item_heading">Beaumit</span></h3>
+            </a></li>
+          <li class="tab_content" data-group="client"><a href="CAR_B.html">
+              <div class="works_items_img"><img src="img/topWcarB.png" alt="バナー広告"></div>
+              <h3>Banner <span class="works_item_heading">finance</span></h3>
+            </a></li>
+          <li class="tab_content" data-group="client"><a href="IP_B.html">
+              <div class="works_items_img"><img src="img/topWreita.png" alt="バナー広告"></div>
+              <h3>Banner <span class="works_item_heading">IP</span></h3>
+            </a></li>
+          <li class="tab_content" data-group="client">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="Lau_lp.html">
+                    <div class="works_items_img"><img src="img/topWlauOff.png" alt="バナー広告"></div>
+                  </a></div>
+                <div class="swiper-slide"><a href="Lau_lp.html">
+                    <div class="works_items_img"><img src="img/topWlauLp.png" alt="バナー広告"></div>
+                  </a></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <a href="Lau_lp.html">
+              <h3>LP Assets <span class="works_item_heading">Laugh.offer</span></h3>
+            </a>
+          </li>
+          <li class="tab_content" data-group="client"><a href="Un_CB.html">
+              <div class="works_items_img"><img src="img/topWunCB.png" alt="バナー広告"></div>
+              <h3>LP Assets <span class="works_item_heading">Un ChatBot</span></h3>
+            </a></li>
+          <li class="tab_content" data-group="client">
+            <div class="swiper mySwiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="Bea_lp.html">
+                    <div class="works_items_img"><img src="img/topWbeaLp.png" alt="バナー広告"></div>
+                  </a></div>
+                <div class="swiper-slide"><a href="Bea_lp.html">
+                    <div class="works_items_img"><img src="img/topWbeaA.png" alt="バナー広告"></div>
+                  </a></div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <a href="Bea_lp.html">
+              <h3>LP Assets <span class="works_item_heading">Beaumit</span></h3>
+            </a>
+          </li>
+          <!-- <ここまでhtml未作成> -->
+          <li class="tab_content is-hide" data-group="design"><a href="imecon.html">
+              <div class="works_items_img"><img src="img/topWimecon.jpg" alt="イメコンサイトimg"></div>
+              <h3>Website <span class="works_item_heading">Natunal イメージコンサルティングサロン</span></h3>
+            </a></li>
+          <li class="tab_content is-hide" data-group="design"> <a href="uru.html">
+              <div class="works_items_img"><img src="img/topWuru.png" alt="uruヘアケア商品"></div>
+              <h3>Website <span class="works_item_heading">Uru 金木犀シリーズ</span></h3>
+            </a></li>
+          <li class="tab_content is-hide" data-group="design"><a href="ramuchan.html">
+              <div class="works_items_img"><img src="img/topWjingiskan.jpg" alt="ジンギスカンサイトimg"></div>
+              <h3>Website <span class="works_item_heading">DOSANKOラムちゃん</span></h3>
+            </a></li>
+          <li class="tab_content is-hide" data-group="banner"><a href="soccer.html">
+              <div class="works_items_img"><img src="img/topWsoccer.jpg" alt="SoccerBannerimg"></div>
+              <h3>Banner <span class="works_item_heading">マンチェスター・シティ VS バイエルン・ミュンヘン</span></h3>
+            </a></li>
+          <li class="tab_content is-hide" data-group="banner"> <a href="clinic.html">
+              <div class="works_items_img"><img src="img/topWclinic.jpg" alt="美容Bannerimg"></div>
+              <h3>Banner <span class="works_item_heading">TOTAL CLINIC 白玉点滴</span></h3>
+            </a></li>
+          <li class="tab_content is-hide" data-group="banner"><a href="yoga.html">
+              <div class="works_items_img"><img src="img/topWyoga.jpg" alt="yogaBannerimg"></div>
+              <h3>Banner <span class="works_item_heading">オンラインヨガスタジオ</span></h3>
+            </a></li>
+          <li class="tab_content is-hide" data-group="banner"><a href="lip.html">
+              <div class="works_items_img"><img src="img/topWlip.jpg" alt="lipBannerimg"></div>
+              <h3>Banner <span class="works_item_heading">MELM 期間限定色リップ</span></h3>
+            </a></li>
+          <li class="tab_content is-hide" data-group="banner"><a href="camera.html">
+              <div class="works_items_img"><img src="img/topWcamera.jpg" alt="cameraBannerimg"></div>
+              <h3>Banner <span class="works_item_heading">SONYミラーレスカメラ</span></h3>
+            </a></li>
+          <li class="tab_content is-hide" data-group="banner"><a href="sale.html">
+              <div class="works_items_img"><img src="img/topWsale.jpg" alt="saleBannerimg"></div>
+              <h3>Banner <span class="works_item_heading">fashionsiteSALE</span></h3>
+            </a></li>
+          <li class="tab_content is-hide" data-group="other"><a href="taiyaki.html">
+              <div class="works_items_img"><img src="img/topWtai.png" alt="タイ焼きパフェflierimg"></div>
+              <h3>Flyer <span class="works_item_heading">たい焼きパフェ</span></h3>
+            </a></li>
+          <li class="tab_content is-hide" data-group="other"><a href="businesscard.html">
+              <div class="works_items_img"><img src="img/topWBusiness Card .jpg" alt="businesscardimg"></div>
+              <h3>Business Card <span class="works_item_heading">My business card</span></h3>
+            </a></li>
+          <li class="tab_content is-hide" data-group="other"><a href="anth.html">
+              <div class="works_items_img"><img src="img/nailsalonLogoMoc.jpg" alt="nailsalonロゴimg"></div>
+              <h3>Logo <span class="works_item_heading">Anth NAIL SALON</span></h3>
+            </a></li>
+        </ul>
+      </div>
+    </section>
+    <section id="skill_page" class="section_skill">
+      <div class="inner__skill">
+        <div class="heading__skill">
+          <div class="kirakira_img"><img src="img/star@2x.png" alt="kirakiraObject"></div>
+          <h2 class="heading textanimation">SKILL</h2>
+          <p class="subFont">できること</p>
+        </div>
+        <h3 class="content_skill">(Design)</h3>
+        <p class="skill_writings fadeInTrigger">
+          Webサイト、チラシ、バナーなどのグラフィックデザイン制作を学習してまいりました。トーン＆マナーを意識しつつも見た目の美しさだけでなく、機能性などにも配慮したデザインを心がけ、世界観をより引き出し、見る人がワクワクし楽しめるようなデザインを目指しております。
+        </p>
+        <span class="dasign_tools gray">Tools：Illustrator / Photoshop / XD</span>
+        <div class="doted_box"><span class="doted_no3 gray"></span> <span class="doted_no2 gray"></span> <span
+            class="doted_center gray"></span> <span class="doted_no2 gray"></span> <span class="doted_no3 gray"></span>
+        </div>
+        <h3 class="content_skill">(Development)</h3>
+        <p class="skill_writings fadeInTrigger">
+          HTML・CSS・jQueryの一定の基礎を学習してまいりました。WordPressにおいてはオリジナルテーマの構築を行っております。伝えたいことを”魅せる”実装を目指し、誰が見ても分かりやすいコーディングを心掛けています。
+        </p>
+        <span class="Language gray">Language：HTML / CSS / jQuery </span><span class="tools gray">Tools：WordPress</span>
+      </div>
+      <img class="smallKirakira" src="img/star@2x.png" alt="kirakiraObjectsSmal">
+    </section>
+  </main>
+  <footer id="contact_page" class="topFooter">
+    <h2 class="heading__contact">CONTACT</h2>
+    <div class="mail__contact">
+      <p class="mail"><a href="mailto:nemui_0331@yahoo.ne.jp">nemui_0331@yahoo.ne.jp</a></p>
+    </div>
+    <div class="icons top_footer_icons"><a href="https://www.instagram.com/daily_yun0331" target="_blank"
+        rel="norepener"><img src="img/instagram _icon@2x.png" alt="インスタグラムアイコン"></a><a
+        href="https://twitter.com/YUUKI_design" target="_blank" rel="norepener"><img src="img/x_iconW@2x.png"
+          alt="Xアイコン"></a><a href="https://www.pinterest.jp/yuukiimnida/" target="_blank" rel="norepener"><img
+          src="img/pinta_iconW@2x.png" alt="ピンタレスト"></a></div>
+    <a class="pagetop_btn" href="#">page top</a> <small>&copy;2023Yuki Murai</small>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+
+</html>
